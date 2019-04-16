@@ -54,11 +54,11 @@ for (i, rect) in enumerate(rects):
 		roi = imutils.resize(roi, width=250, inter=cv2.INTER_CUBIC)
  
 		# show the particular face part
-	cv2.imshow("ROI", roi)
-	cv2.imshow("Image", clone)
-	cv2.waitKey(0)
+		cv2.imshow("ROI", roi)
+		cv2.imshow("Image", clone)
+		cv2.waitKey(0)
  
 	# visualize all facial landmarks with a transparent overlay
-output = face_utils.visualize_facial_landmarks(image, shape)
-cv2.imshow("Image", output)
-cv2.waitKey(0)
+	output = face_utils.visualize_facial_landmarks(image, shape)
+	cv2.imshow("Image", output)
+	cv2.waitKey(0)

@@ -1,6 +1,6 @@
 # USAGE
-# python video_facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat
-# python video_facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --picamera 1
+# python video_facial_landmarks.py \ --shape-predictor shape_predictor_68_face_landmarks.dat
+# python video_facial_landmarks.py \ --shape-predictor shape_predictor_68_face_landmarks.dat --picamera 1
 
 # import the necessary packages
 from imutils.video import VideoStream

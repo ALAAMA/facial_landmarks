@@ -1,5 +1,5 @@
 # USAGE
-# python image_diff.py --first images/original_01.png --second images/modified_01.png
+# python image_diff.py --first images/original_01.png \ --second images/modified_01.png
 
 # import the necessary packages
 from skimage.measure import compare_ssim

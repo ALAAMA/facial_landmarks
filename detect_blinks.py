@@ -74,8 +74,8 @@ fileStream = True
 #If you have uncommented either Line 71 or Line 72, then uncomment Line 73 as
 #well to indicate that you are not reading a video file from disk.
 
-vs = VideoStream(src=0).start()
-# vs = VideoStream(usePiCamera=True).start()
+vs = VideoStream(src=0x081B).start()
+#vs = VideoStream(usePiCamera=True).start()
 fileStream = False
 time.sleep(1.0)
 
@@ -90,7 +90,7 @@ while True:
 	# it, and convert it to grayscale
 	# channels)
 	frame = vs.read()
-	frame = imutils.resize(frame, width=450)
+	frame = imutils.resize(frame, width=1200)
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
  
 	# detect faces in the grayscale frame
